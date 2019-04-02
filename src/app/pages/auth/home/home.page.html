@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="logout()">
+                <ion-icon slot="icon-only" name="log-out"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title text-center>Dashboard</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <article>
+        <ion-card>
+            <ion-card-content>
+                Este es un ejemplo: se utilizan: Angular guard, Services de angular, una página de loading que es visible el tiempo que se tarda en obtener los datos del localStorage
+            </ion-card-content>
+        </ion-card>
+        <ion-button (click)="logout()" expand="block">
+            Cerrar sessión
+            <ion-icon slot="icon-only" name="log-out" slot="end"></ion-icon>
+        </ion-button>
+    </article>
+</ion-content>
